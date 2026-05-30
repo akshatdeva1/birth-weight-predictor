@@ -1,0 +1,19 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Home Page</title>
+</head>
+<body>
+    {% if name == "Akshat Deva" %}
+    {% for i in range(4) %}
+    <h1>{{i}}  Hi {{name}} !</h1><br>
+    <h1>Welcome to the Home Page</h1><br>
+    <p>This is a simple Flask application created by Akshat Deva.</p>
+    {% endfor %}
+    {% else %}
+    <h1>Invalid User!</h1>
+    {% endif %}
+</body>
+</html>
